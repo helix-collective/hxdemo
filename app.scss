@@ -1,0 +1,286 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 40px;
+  left: 0;
+  right: 0;
+}
+
+header,
+nav.main a,
+nav.main a:visited,
+a.button {
+  color: white;
+  background: #0076ca;
+  background: linear-gradient(#0076ca, #0060b0);
+  text-decoration: none;
+}
+
+
+footer {
+  position: fixed;
+  height: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #777;
+  background: linear-gradient(#757779, #646668);
+  box-shadow: 0px 12px 12px #5a5c5e inset;
+  color: #bbb;
+  padding: 10px 16px;
+  font-size: 12px;
+  text-align: center;
+}
+.app {
+  overflow: hidden;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+
+a.button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+a.button:hover,
+nav.main a:hover {
+  background: #0086da;
+}
+
+body, td, th, input {
+  font-size: 14px;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+}
+
+
+textarea {
+  width: 100%;
+}
+textarea.json {
+  font-family: monospace;
+  font-size: 16px;
+  min-height: 80px;
+}
+
+nav.main {
+  overflow:hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+nav.main a {
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+h1,
+nav.main a {
+  padding: 10px 16px;
+}
+
+nav.main a:hover {
+}
+
+
+ul.items {
+  padding: 0;
+  margin: 0;
+}
+ul.items li.create label {
+  font-weight: 500;
+
+}
+
+ul.items li.create i.fa {
+  /*float:left;*/
+  margin-right: 6px;
+}
+
+ul.items li {
+  list-style-type: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #444;
+}
+ul.items li:hover {
+  background: white;
+  color: black;
+}
+
+ul.items li .go-icon {
+  padding-top: 2px;
+  float: right;
+  display: none;
+}
+ul.items li:hover .go-icon {
+  display: block;
+}
+
+i.fa {
+  color: gray;
+}
+.context-panel {
+  position: absolute;
+  margin: 0;
+  padding: 18px;
+  left: 400px;
+  right: 0;
+  top: 0;
+  height: 71px;
+  background: #f1f2f3;
+  border-bottom: 1px solid silver;
+}
+.context-panel .actions {
+}
+.context-panel h2 {
+  float: right;
+
+  margin: 0;
+  padding: 5px;
+}
+
+.search-field {
+  position: relative;
+  margin: 0;
+  padding: 16px;
+  background: #d8d8d8;
+  background: linear-gradient(#d8d9db, #c5c6c7);
+  color: white;
+}
+.search-field input {
+  border-radius: 16px;
+  padding: 8px 16px;
+}
+.search-field i {
+  display: block;
+  position: absolute;
+  right: 27px;
+  top: 27px;
+  font-size: 18px;
+}
+.search-field input:focus + i {
+  color: #47a;
+}
+
+form label {
+  display: block;
+  color: #555;
+}
+form input,
+form textarea {
+  margin-bottom: 25px;
+}
+
+input,
+textarea {
+  outline: none;
+  border-radius: 4px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid silver;
+}
+
+input:focus {
+  border-color: #27c;
+  box-shadow: 0 0 4px #27c;
+}
+
+.content {
+  padding: 25px;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+header {
+  padding-bottom: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  right: 0;
+  top: -1px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;;
+  left: 0;
+  width: 400px;
+  bottom: 0;
+  background: #f1f2f3;
+  border-right: 1px solid silver;
+}
+
+.content {
+  position: absolute;
+  top: 71px;;
+  right: 0;
+  left: 400px;
+  bottom: 0;
+  overflow-y: scroll;
+  /* box-shadow: 3px 2px 3px #999 inset;*/
+}
+
+.component-details th {
+  width: 100px;
+}
+
+.status-label {
+  color: white;
+  display: inline-block;
+  background: #444;
+  border-radius: 2px;
+  padding: 4px 8px;
+}
+
+.success.status-label {
+  background: #5a5;
+}
+.error.status-label {
+  background: #c55;
+}
+
+table {
+  width: 100%;
+}
+
+pre {
+  margin: 0;
+  whitespace: pre-wrap;
+}
+
+textarea.databox {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid silver;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "route-demo",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "webpack": "1.4.9",
+    "webpack-dev-server": "1.4.9",
+    "jsdom": "1.0.3",
+    "jasmine-node": "1.14.5",
+    "style-loader": "0.8.3",
+    "css-loader": "0.9.0",
+    "html-loader":"0.2.3",
+    "sass-loader":"0.3.0",
+    "ng-cache-loader":"0.0.9"
+  }
+}

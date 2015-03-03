@@ -1,0 +1,24 @@
+<div class='sidebar'>
+  <div class='search-field'>
+    <input type='text' ng-model='search' placeholder='Search...'/>
+    <i class="fa fa-search"></i>
+  </div>
+
+
+  <ul class='items'>
+    <li ng-repeat='item in ui.items | filter:search' ng-click='ui.go(item.id)'>
+      {{item.name}} <i class='fa fa-chevron-right go-icon'></i>
+    </li>
+  </ul>
+
+</div>
+
+<div class='context-panel'>
+  <h2>People</h2>
+  <div class='actions'>
+    <!--a class='button' ng-click='ui.create()'>Create Workflow</a-->
+  </div>
+</div>
+
+<section class='content' ui='ui.route.current.ui'></section>
+

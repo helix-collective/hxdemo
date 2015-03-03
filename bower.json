@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "dependencies": {
     "angular": "1.3.14",
-    "heroin": "0.0.2"
+    "heroin": "0.0.2",
+    "hxroute": "0.0.1"
   }
 }
 
